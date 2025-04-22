@@ -16,7 +16,7 @@ A modern, modular, and superior XSS scanner with advanced features and plugin su
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/OpenXSS.git
+git clone https://github.com/IlumCI/OpenXSS.git
 cd OpenXSS
 ```
 
