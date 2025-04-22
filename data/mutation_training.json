@@ -1,0 +1,152 @@
+[
+  {
+    "original_payload": "<script>alert(1)</script>",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "<script>alert(1)</script>",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "<script>alert(1)</script>",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "javascript:alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "javascript:alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "javascript:alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onerror=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onerror=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onerror=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onload=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onload=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onload=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onmouseover=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onmouseover=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onmouseover=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onclick=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onclick=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onclick=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onfocus=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onfocus=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onfocus=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onblur=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onblur=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onblur=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onchange=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onchange=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onchange=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onsubmit=alert(1)",
+    "context_type": "html",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onsubmit=alert(1)",
+    "context_type": "js",
+    "successful_mutations": 0
+  },
+  {
+    "original_payload": "onsubmit=alert(1)",
+    "context_type": "attribute",
+    "successful_mutations": 0
+  }
+]

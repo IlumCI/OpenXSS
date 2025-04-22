@@ -1,0 +1,34 @@
+# OpenXSS Configuration File
+
+# Parameter Bruteforcer Plugin Configuration
+param_bruteforcer:
+  wordlist: data/params.txt
+  concurrent_requests: 10
+  timeout: 10
+  test_payload: "<script>alert(1)</script>"
+
+# Wordlist Scanner Plugin Configuration
+wordlist_scanner:
+  wordlist: data/xss_payloads.txt
+  concurrent_requests: 10
+  timeout: 10
+  use_obfuscation: true
+  encoding_types:
+    - html
+    - unicode
+    - js_escape
+    - url
+    - base64
+
+# Global Settings
+logging:
+  level: INFO
+  file: openxss.log
+
+http:
+  timeout: 30
+  max_retries: 3
+  user_agent: "OpenXSS Scanner v1.0"
+  headers:
+    Accept: "*/*"
+    Connection: "keep-alive" 

