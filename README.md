@@ -142,35 +142,7 @@ class CustomPlugin(PluginInterface):
 
 This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
 
-<h1 align="center">
-  <br>
-  <a href="https://github.com/IlumCI/OpenXSS"><img src="https://image.ibb.co/cpuYoA/xsstrike-logo.png" alt="OpenXSS"></a>
-  <br>
-  OpenXSS
-  <br>
-</h1>
-
-<h4 align="center">Advanced XSS Detection Suite</h4>
-
-<p align="center">
-  <a href="https://github.com/IlumCI/OpenXSS/releases">
-    <img src="https://img.shields.io/github/release/IlumCI/OpenXSS.svg">
-  </a>
-  <a href="https://travis-ci.com/IlumCI/OpenXSS">
-    <img src="https://img.shields.io/travis/com/IlumCI/OpenXSS.svg">
-  </a>
-  <a href="https://github.com/IlumCI/OpenXSS/issues?q=is%3Aissue+is%3Aclosed">
-      <img src="https://img.shields.io/github/issues-closed-raw/IlumCI/OpenXSS.svg">
-  </a>
-</p>
-
 ![multi xss](https://image.ibb.co/gOCV5L/Screenshot-2018-11-19-13-33-49.png)
-
-<p align="center">
-  <a href="https://github.com/IlumCI/OpenXSS/wiki/Usage">Usage</a> •
-  <a href="https://github.com/IlumCI/OpenXSS/wiki/For-Developers">For Developers</a> •
-  <a href="https://github.com/IlumCI/OpenXSS/wiki/Compatibility-&-Dependencies">Compatibility</a> •
-</p>
 
 OpenXSS is a Cross Site Scraping suite capable of detecting and exploiting XSS vulnerabilities in web applications.
 
