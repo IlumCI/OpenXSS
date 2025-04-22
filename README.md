@@ -167,12 +167,9 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 ![multi xss](https://image.ibb.co/gOCV5L/Screenshot-2018-11-19-13-33-49.png)
 
 <p align="center">
-  <a href="https://github.com/IlumCI/OpenXSS/wiki">OpenXSS Wiki</a> •
   <a href="https://github.com/IlumCI/OpenXSS/wiki/Usage">Usage</a> •
-  <a href="https://github.com/IlumCI/OpenXSS/wiki/FAQ">FAQ</a> •
   <a href="https://github.com/IlumCI/OpenXSS/wiki/For-Developers">For Developers</a> •
   <a href="https://github.com/IlumCI/OpenXSS/wiki/Compatibility-&-Dependencies">Compatibility</a> •
-  <a href="https://github.com/IlumCI/OpenXSS#gallery">Gallery</a>
 </p>
 
 OpenXSS is a Cross Site Scraping suite capable of detecting and exploiting XSS vulnerabilities in web applications.
@@ -249,8 +246,3 @@ python3 openxss.py -u "http://example.com/page.php?q=query" --payload-count 5
 - `html_entity_mixed`: Mixed HTML entity encoding
 - `html_hex_mixed`: Mixed HTML hex encoding
 - `html_entity_hex_mixed`: Mixed HTML entity and hex encoding
-
-## Documentation
-
-For more information about OpenXSS, please visit our [documentation](https://github.com/IlumCI/OpenXSS/wiki).
-
